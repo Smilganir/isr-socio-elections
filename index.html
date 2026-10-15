@@ -1,6 +1,30 @@
 <!doctype html>
 <html lang="he">
   <head>
+    <!-- Keep embeds usable when WebView DOM storage is disabled. Preferences then last only for this page. -->
+    <script>
+      (function () {
+        ['localStorage', 'sessionStorage'].forEach(function (name) {
+          try {
+            var nativeStore = window[name];
+            var testKey = '__storage_probe_' + Math.random();
+            nativeStore.setItem(testKey, testKey);
+            nativeStore.removeItem(testKey);
+            return;
+          } catch (_) {}
+          var data = Object.create(null);
+          var memoryStore = {
+            getItem: function (key) { key = String(key); return Object.prototype.hasOwnProperty.call(data, key) ? data[key] : null; },
+            setItem: function (key, value) { data[String(key)] = String(value); },
+            removeItem: function (key) { delete data[String(key)]; },
+            clear: function () { data = Object.create(null); },
+            key: function (index) { return Object.keys(data)[Number(index) >>> 0] ?? null; },
+            get length() { return Object.keys(data).length; }
+          };
+          try { Object.defineProperty(window, name, { configurable: true, get: function () { return memoryStore; } }); } catch (_) {}
+        });
+      })();
+    </script>
     <meta charset="UTF-8" />
     <!-- Google tag (gtag.js) — same property as other Smilganir sites -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-8Z0X9ZJFH9"></script>
