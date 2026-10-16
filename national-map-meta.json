@@ -1,0 +1,131 @@
+{
+  "election": 25,
+  "snapshotDate": "2026-09-29",
+  "sourceSha256": "1f363d0198388b172d98357b0286c8f8ffb39e4dc34a42a1a16658c59d6eda3b",
+  "image": "national-map-k25-he-phone390.png",
+  "width": 780,
+  "height": 1688,
+  "source": "נתוני מפת הבחירות לכנסת ה-25",
+  "variants": [
+    {
+      "name": "phone320",
+      "locale": "he",
+      "image": "national-map-k25-he-phone320.png",
+      "width": 640,
+      "height": 1688,
+      "cssWidth": 320,
+      "cssHeight": 844,
+      "bytes": 153036
+    },
+    {
+      "name": "phone390",
+      "locale": "he",
+      "image": "national-map-k25-he-phone390.png",
+      "width": 780,
+      "height": 1688,
+      "cssWidth": 390,
+      "cssHeight": 844,
+      "bytes": 176520
+    },
+    {
+      "name": "tablet",
+      "locale": "he",
+      "image": "national-map-k25-he-tablet.png",
+      "width": 1536,
+      "height": 2000,
+      "cssWidth": 768,
+      "cssHeight": 1000,
+      "bytes": 327262
+    },
+    {
+      "name": "desktop",
+      "locale": "he",
+      "image": "national-map-k25-he-desktop.png",
+      "width": 2880,
+      "height": 1800,
+      "cssWidth": 1440,
+      "cssHeight": 900,
+      "bytes": 386019
+    },
+    {
+      "name": "embed-phone",
+      "locale": "he",
+      "image": "national-map-k25-he-embed-phone.png",
+      "width": 718,
+      "height": 1180,
+      "cssWidth": 359,
+      "cssHeight": 590,
+      "bytes": 103202
+    },
+    {
+      "name": "embed-desktop",
+      "locale": "he",
+      "image": "national-map-k25-he-embed-desktop.png",
+      "width": 2148,
+      "height": 932,
+      "cssWidth": 1074,
+      "cssHeight": 466,
+      "bytes": 173694
+    },
+    {
+      "name": "phone320",
+      "locale": "en",
+      "image": "national-map-k25-en-phone320.png",
+      "width": 640,
+      "height": 1688,
+      "cssWidth": 320,
+      "cssHeight": 844,
+      "bytes": 160324
+    },
+    {
+      "name": "phone390",
+      "locale": "en",
+      "image": "national-map-k25-en-phone390.png",
+      "width": 780,
+      "height": 1688,
+      "cssWidth": 390,
+      "cssHeight": 844,
+      "bytes": 190405
+    },
+    {
+      "name": "tablet",
+      "locale": "en",
+      "image": "national-map-k25-en-tablet.png",
+      "width": 1536,
+      "height": 2000,
+      "cssWidth": 768,
+      "cssHeight": 1000,
+      "bytes": 339473
+    },
+    {
+      "name": "desktop",
+      "locale": "en",
+      "image": "national-map-k25-en-desktop.png",
+      "width": 2880,
+      "height": 1800,
+      "cssWidth": 1440,
+      "cssHeight": 900,
+      "bytes": 413089
+    },
+    {
+      "name": "embed-phone",
+      "locale": "en",
+      "image": "national-map-k25-en-embed-phone.png",
+      "width": 718,
+      "height": 1180,
+      "cssWidth": 359,
+      "cssHeight": 590,
+      "bytes": 109252
+    },
+    {
+      "name": "embed-desktop",
+      "locale": "en",
+      "image": "national-map-k25-en-embed-desktop.png",
+      "width": 2148,
+      "height": 932,
+      "cssWidth": 1074,
+      "cssHeight": 466,
+      "bytes": 183577
+    }
+  ]
+}
