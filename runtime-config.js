@@ -1,1 +1,2 @@
-window.__MAPBOX_RUNTIME__={"token":"pk.eyJ1Ijoic21pbGdhbmlyIiwiYSI6ImNsbnpzaTBrbjE2Zm0yaW1jNjk3dXI4dmcifQ.-Nx0Ae-YKEjCuAxRiJED3A","dataBase":"https://isr-socio-elections-data.smilganir.workers.dev/data/","govmapToken":"0daecc39-d144-4635-8f54-641c989c31ab"};
+/** Local dev: token comes from web/.env (VITE_MAPBOX_ACCESS_TOKEN). */
+window.__MAPBOX_RUNTIME__ = window.__MAPBOX_RUNTIME__ || {};
