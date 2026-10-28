@@ -1,0 +1,100 @@
+{
+  "source_sha256": "9cb51c16612f44330300964bed6d7fd9a3c3146b6abec67fd52a5a05e5ed80a8",
+  "source": "Nir-supplied K26 concentration workbook, 2026-10-24 11:21",
+  "input_crs": "EPSG:2039",
+  "output_crs": "EPSG:4326",
+  "applied": 4799,
+  "estimated_remaining": 18,
+  "exceptions": [
+    {
+      "locality": 28,
+      "ballots": "2",
+      "reason": "missing_or_invalid"
+    },
+    {
+      "locality": 70,
+      "ballots": "213",
+      "reason": "missing_or_invalid"
+    },
+    {
+      "locality": 2300,
+      "ballots": "4",
+      "reason": "missing_or_invalid"
+    },
+    {
+      "locality": 3616,
+      "ballots": "31.1, 31.2",
+      "reason": "missing_or_invalid"
+    },
+    {
+      "locality": 4000,
+      "ballots": "87",
+      "reason": "missing_or_invalid"
+    },
+    {
+      "locality": 4000,
+      "ballots": "164",
+      "reason": "missing_or_invalid"
+    },
+    {
+      "locality": 4000,
+      "ballots": "153",
+      "reason": "missing_or_invalid"
+    },
+    {
+      "locality": 4000,
+      "ballots": "369",
+      "reason": "missing_or_invalid"
+    },
+    {
+      "locality": 6200,
+      "ballots": "94",
+      "reason": "missing_or_invalid"
+    },
+    {
+      "locality": 6600,
+      "ballots": "211",
+      "reason": "missing_or_invalid"
+    },
+    {
+      "locality": 6800,
+      "ballots": "38.1, 38.2",
+      "reason": "missing_or_invalid"
+    },
+    {
+      "locality": 7000,
+      "ballots": "37",
+      "reason": "missing_or_invalid"
+    },
+    {
+      "locality": 8400,
+      "ballots": "4",
+      "reason": "missing_or_invalid"
+    },
+    {
+      "locality": 8400,
+      "ballots": "129",
+      "reason": "missing_or_invalid"
+    },
+    {
+      "locality": 8500,
+      "ballots": "68",
+      "reason": "missing_or_invalid"
+    },
+    {
+      "locality": 8600,
+      "ballots": "515",
+      "reason": "missing_or_invalid"
+    },
+    {
+      "locality": 8700,
+      "ballots": "99, 102.1, 110",
+      "reason": "ambiguous"
+    },
+    {
+      "locality": 9500,
+      "ballots": "13",
+      "reason": "missing_or_invalid"
+    }
+  ]
+}
