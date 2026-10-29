@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="he">
+  <head>
+    <!-- Keep embeds usable when WebView DOM storage is disabled. Preferences then last only for this page. -->
+    <script>
+      (function () {
+        ['localStorage', 'sessionStorage'].forEach(function (name) {
+          try {
+            var nativeStore = window[name];
+            var testKey = '__storage_probe_' + Math.random();
+            nativeStore.setItem(testKey, testKey);
+            nativeStore.removeItem(testKey);
+            return;
+          } catch (_) { window.__NATIVE_STORAGE_UNAVAILABLE__ = true; }
+          var data = Object.create(null);
+          var memoryStore = {
+            getItem: function (key) { key = String(key); return Object.prototype.hasOwnProperty.call(data, key) ? data[key] : null; },
+            setItem: function (key, value) { data[String(key)] = String(value); },
+            removeItem: function (key) { delete data[String(key)]; },
+            clear: function () { data = Object.create(null); },
+            key: function (index) { return Object.keys(data)[Number(index) >>> 0] ?? null; },
+            get length() { return Object.keys(data).length; }
+          };
+          try { Object.defineProperty(window, name, { configurable: true, get: function () { return memoryStore; } }); } catch (_) {}
+        });
+      })();
+    </script>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/isr-socio-elections/favicon.svg" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/isr-socio-elections/favicon-32.png" />
+    <link rel="icon" type="image/png" sizes="192x192" href="/isr-socio-elections/favicon-192.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/isr-socio-elections/apple-touch-icon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover"
+    />
+    <title>הבחירות לכנסת ה־25</title>
+    <link rel="canonical" href="https://smilganir.github.io/isr-socio-elections/" />
+    <script type="module" crossorigin src="/isr-socio-elections/preview/party-wrap/assets/index-Cnoka-um.js"></script>
+  </head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
