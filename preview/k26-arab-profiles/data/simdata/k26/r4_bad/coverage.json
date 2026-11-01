@@ -1,0 +1,13 @@
+{
+ "stage": "r2",
+ "kind": "results",
+ "ballots_reporting": 8000,
+ "ballots_mapped_stat": 7264,
+ "ballots_unmapped_counted_settlement_national_only": 736,
+ "voters_reporting": 4872642,
+ "voted_reported": 2990079,
+ "registry_bzb_total": 7331981,
+ "turnout_pct_of_reporting_bzb": 61.4,
+ "turnout_pct_of_registry_bzb": 40.8,
+ "note": "SIMULATED DATA - rehearsal only | bloc split is a synthetic fixture, not a political classification"
+}
